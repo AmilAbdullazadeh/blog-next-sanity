@@ -1,0 +1,36 @@
+.main {
+  h1, h3 {
+    text-align: center;
+  }
+}
+
+.feed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post {
+  margin: 25px;
+  width: 500px;
+  height: 316px;
+  cursor: pointer;
+  text-align: center;
+  max-width: calc(100vw - 50px);
+
+  &:hover {
+
+    .mainImage {
+      width: 490px;
+      transition: .2s;
+    }
+  }
+}
+
+.mainImage {
+  width: 500px;
+  transition: .2s;
+  border-radius: 5px;
+  max-width: calc(100vw - 50px);
+  box-shadow: 0 0 2px #000000;
+}
